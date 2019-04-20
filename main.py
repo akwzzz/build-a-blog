@@ -66,18 +66,6 @@ def show_blogs():
         return render_template('blog_entry.html', blog=blogs)
 
 
-# def show_blogs():
-#     id = request.args.get(Blog.id)
-#     single_blog = Blog.query.filter_by(id=id).first()
-#     blogs = Blog.query.all()
-#     if id == single_blog:
-#         return render_template('blog_entry.html', blogs=blogs)
-#     return render_template('blogs_view.html', blogs=blogs)
-
-# def single_blog():
-#     single_blog = Blog.query.filter_by(blog_id=blog_id).first()
-#     return render_template('blog_entry.html', blog_name=blog_name, blog_body=blog_body)
-
 
 app.secret_key = 'A0Zr98j/3yX R~XHH!jmN]LWX/,?RU'
 
